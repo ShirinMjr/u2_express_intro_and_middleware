@@ -30,15 +30,15 @@ app.get("/", (req, res) => {
 ```
 
 ## Running an Express Server With `nodemon`
- `node server.js`. This would spin up your server _once_. 
+ `node server.js`. spins up your server _once_.
+
+
  Use a package called `nodemon` instead. 
 
 ```
 npm install nodemon --save-dev
 ```
-
-Then modify the `scripts` section in the `package.json` file to add a `start` and `dev` script. This allows us to run `npm start` to run a one time spin up of our server _or_ `npm run dev` to run our server with `nodemon`:
-
+Modify the `scripts` section in the `package.json` 
 ```
 "scripts": {
   "start": "node server.js",
