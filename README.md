@@ -10,7 +10,8 @@ npm install express
 
 ## Express Boilerplate
 
-In `server.js` 
+In `server.js`
+
 ```js
 const express = require("express");
 const PORT = process.env.PORT || 3001;
@@ -21,7 +22,8 @@ app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
 });
 ```
- **route**
+
+**route**
 
 ```js
 app.get("/", (req, res) => {
@@ -30,15 +32,17 @@ app.get("/", (req, res) => {
 ```
 
 ## Running an Express Server With `nodemon`
- `node server.js`. spins up your server _once_.
 
+`node server.js`. spins up your server _once_.
 
- Use a package called `nodemon` instead. 
+Use a package called `nodemon` instead.
 
 ```
 npm install nodemon --save-dev
 ```
-Modify the `scripts` section in the `package.json` 
+
+Modify the `scripts` section in the `package.json`
+
 ```
 "scripts": {
   "start": "node server.js",
@@ -46,13 +50,7 @@ Modify the `scripts` section in the `package.json`
 }
 ```
 
-Say it with me: Magic!
-
-![Hermoine](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FOUwzqE4ZOk5Bm%2F200.gif&f=1&nofb=1)
-
-## You Do
-
-In our Express server in `server.js`, let's define the following routes:
+## Add more routes:
 
 ```
  - GET /                  Response content: "Welcome to my webpage"
