@@ -29,19 +29,9 @@ app.get("/", (req, res) => {
 });
 ```
 
-Whenever an HTTP request to `http://localhost:3001/` is made, the handler function is called. This function has access to two variables: `req` and `res` which represent the HTTP **request** (any information the user sent along to us) and the HTTP **response** (any information the server bounces back).
-
-You might end up doing a lot in these route handler functions. One thing they have to do is **send** an HTTP response back, which we're doing here with `res()`.
-
-When a user visits `http://localhost:3001/` in the browser, they'll see "You're a wizard, Harry!" displayed on the page. Note that if they go to `http://localhost:3001/news`, we see an error message "Cannot GET /news" because that's a different path that we haven't defined a route for.
-
 ## Running an Express Server With `nodemon`
-
-A web server is a long-running process, which you could just run with `node server.js`. This would spin up your server _once_. However, since you'll be editing the server files and continuously testing it, you would have to stop the `node server.js` process and restart it after every change. Ain't nobody got time for that!
-
-![ColdPops](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FbWM2eWYfN3r20%2Fgiphy.gif&f=1&nofb=1)
-
-Let's use a cool package called `nodemon` instead. We add this on a **_project by project basis_**:
+ `node server.js`. This would spin up your server _once_. 
+ Use a package called `nodemon` instead. 
 
 ```
 npm install nodemon --save-dev
