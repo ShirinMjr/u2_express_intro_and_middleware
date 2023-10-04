@@ -61,15 +61,6 @@ Modify the `scripts` section in the `package.json`
  - GET /movies            Response content: A JSON object that contains an array of 3 objects, each one containing a movie's name, release date, and durationInMinutes
 ```
 
-## Route Parameters
-
-If you consider two URLs:
-
-- wizardingworld.com/article/top-ten-wizards-all-time
-- wizardingworld.com/article/draco-malfoy-villain-or-victim
-
-You could safely assume that both of these URLs are articles, just with different [URL slugs](https://en.wikipedia.org/wiki/Clean_URL#Slug): `top-ten-wizards-all-time` and `draco-malfoy-villain-or-victim`. By convention, if a part of the URL contains two words, we join them with `-`. This is known as "sluggifying".
-
 ## Dynamic Endpoints
 
 In Express, we can create dynamic endpoints by using the in built in `request` object.
