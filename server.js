@@ -10,3 +10,8 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
     res.send("Welcome to Practice app!");
 });
+
+app.get("/message/:id", (request, response) => {
+    console.log(`Getting a message with the id of ${request.params.id}`);
+    response.send({ msg: `Message with an id of ${request.params.id} found` });
+  });
