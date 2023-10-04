@@ -10,8 +10,7 @@ npm install express
 
 ## Express Boilerplate
 
-To use Express, we `require()` the package in our `server.js` file, create a new Express application object, and finally start the application "listening" on a specific port. Let's build this out together:
-
+In `server.js` 
 ```js
 const express = require("express");
 const PORT = process.env.PORT || 3001;
@@ -22,14 +21,7 @@ app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`);
 });
 ```
-
-Our server won't do anything just yet, this is just boilerplate to use Express.
-
-![Wands](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3UtEIg06e3uz6%2Fgiphy.gif&f=1&nofb=1)
-
-## Our First Route
-
-In Express, you define a **route** in a `server.js` file. A route is a path the user makes an HTTP request for, such as GET `/`, and a handler function that takes care of that request. Like this...
+ **route**
 
 ```js
 app.get("/", (req, res) => {

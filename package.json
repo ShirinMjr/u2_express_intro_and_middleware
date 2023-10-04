@@ -1,0 +1,15 @@
+{
+  "name": "u2_express_intro_and_middleware",
+  "version": "1.0.0",
+  "description": "- `touch` a `server.js` file - `code .` to open in VSCode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
