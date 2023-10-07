@@ -50,17 +50,6 @@ Modify the `scripts` section in the `package.json`
 }
 ```
 
-## Add more routes:
-
-```
- - GET /                  Response content: "Welcome to my webpage"
- - GET /favorite-food     Response content: Your favorite food
- - GET /favorite-movie    Response content: Your favorite movie
- - GET /contact           Response content: Your preferred contact info
- - GET /about-me          Response content: A JSON object with properties about yourself
- - GET /movies            Response content: A JSON object that contains an array of 3 objects, each one containing a movie's name, release date, and durationInMinutes
-```
-
 ## Dynamic Endpoints
 
 In Express, we can create dynamic endpoints by using the in built in `request` object.
