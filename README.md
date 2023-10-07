@@ -102,20 +102,6 @@ Query's function in different way from `params` because we dont set any placehol
 
 We start a query with the `?` operator and set a variable that will hold some type of value. If any additional information is needed we use the `&` operator to append extra variables and values.
 
-![Sesame](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FATt7p8OO4mvvO%2Fgiphy.gif&f=1&nofb=1)
-
-## You Do
-
-- Create a `GET` endpoint `/dogs` and send a string with your favorite dog breed.
-
-- Create a `GET` endpoint `/cats/:catName` and send the cat name you provide back in an object.
-
-- Create a `POST` endpoint `/towns` and send your hometown back in an object.
-
-- Create a `PUT` endpoint `/profile/update/:username`, and send back a string that reads: `User profile with the username of {Whatever username you chose} was updated`.
-
-- Create a `DELETE` endpoint `/tacos` with the query parameters of `type` and `tacoId`, and send back an object with `I deleted the {your taco type} with an id of {your taco id}`.
-
 # Express Middleware
 
 ## Overview
