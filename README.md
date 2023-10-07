@@ -104,42 +104,6 @@ We start a query with the `?` operator and set a variable that will hold some ty
 
 # Express Middleware
 
-## Overview
-
-Let's learn how to use functions called `middleware`. Middleware is a core concept of Express and allow us great flexibility in building and structuring our servers. Middleware helps us handle different conditions during the request/response lifecycle and assists us with making our code more modular.
-
-```js
-const express = require("express");
-
-const app = express();
-const PORT = process.env.PORT || 3001;
-// Your Code Here
-
-// Your Code Ends Here
-app.listen(PORT, () => {
-  console.log(`App listening on port: ${PORT}`);
-});
-```
-
-## What is Middleware?
-
-Middleware can be described as a function that run's in the middle of a request or before. From the Express documentation:
-
-> Middleware functions are functions that have access to the request object (req), the response object (res), and the `next` middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
->
-> Middleware functions can perform the following tasks:
->
-> - Execute any code.
-> - Make changes to the request and the response objects.
-> - End the request-response cycle.
-> - Call the next middleware function in the stack.
-
-![middleware](images/express_request.png)
-
-### Utilizing 3rd Party Middleware
-
-Let's install a couple of depedencies that we will use as `middleware`.
-
 ```sh
 npm install cors
 ```
@@ -160,10 +124,6 @@ app.listen(PORT, () => {
   console.log(`App listening on port: ${PORT}`);
 });
 ```
-
-Now that we have access to this packages we can utilize it in our express app.
-
-Luckily Express makes it super easy for us to incorporate middleware.
 
 Express provides us with a `.use()` function that allows us to incorporate 3rd party packages.
 
